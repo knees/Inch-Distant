@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Header with 4 Buttons and Embedded PDF</title>
+    <style>
+      @font-face {
+        font-family: 'Dustismo';
+        src: url('./Dustismo.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'Gentium';
+        src: url('./GenR102.TTF') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'Alpha';
+        src: url('./alph.ttf') format('truetype');
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #535353;
+        font-family: 'Dustismo', sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000;
+        background-color: #ffffff;
+        cursor: pointer;
+        font-family: 'Dustismo', sans-serif;
+      }
+ 
+      body {
+          background-color: darkslategray;
+          font-family: 'Gentium', sans-serif;
+      }
+
+      h1 {
+          font-family: 'Alpha', sans-serif;
+          color: rgb(0, 225, 255);
+          border-radius: 0px;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+
+        footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #535353;
+        font-family: 'Dustismo', sans-serif;
+          margin: 0;
+          padding: 0;
+          position: fixed;
+        left: 0;
+        bottom: 0;
+      }
+
+          /* Default style for the text (hidden by default) */
+    .mobile-text {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+      padding: 100px;
+    }
+    
+    .non-mobile-text {
+      display: block;
+    }
+
+    /* Media query for mobile devices with a maximum width of 767px */
+    @media (max-width: 767px) {
+      .mobile-text {
+        display: block; /* Show the text on mobile devices */
+      }
+      
+      .non-mobile-text {
+        display: none; /* Hide the text on mobile devices */
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header margin="0">
+      <h1>
+        INCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCHDISTANTINCH
+      </h1>
+    </header>
+    <header style="padding: 10px;">
+      <button onclick="window.location.href = 'inchDistant.html';">Read</button>
+      <button onclick="window.location.href = 'about.html';">About</button>
+      <button onclick="window.location.href = 'accolades.html';">Accolades</button>
+      <button onclick="window.location.href = 'buy.html';">Buy</button>
+      <button onclick="window.location.href='https://mailchi.mp/217f8ad1de3d/inch-distant-mailing-list'">Club Inch</button>
+    </header>
+    <div class="non-mobile-text">
+      <a href="https://online.flippingbook.com/view/15001709/" class="fbo-embed" data-fbo-id="c390415736" data-fbo-ratio="3:2" data-fbo-lightbox="yes" data-fbo-width="100%" data-fbo-height="auto" data-fbo-version="1" style="max-width: 100%">The Death of Definitivity</a><script async defer src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=476170477"></script>
+    </div>
+    <div class="mobile-text">
+      <button onclick="window.location.href='https://online.flippingbook.com/view/15001709/'">
+        CLICK HERE FOR PART ONE
+      </button>
+    </div>
+  </body>
+</html>
